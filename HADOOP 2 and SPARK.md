@@ -91,7 +91,10 @@ source ~/.bashrc
 ```
 
 Go to the unpacking directory
+```sh
 cd hadoop/etc/hadoop
+```
+
 Edit hadoop-env.sh
 ```sh
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre/
@@ -169,12 +172,15 @@ Edit yarn-site.xml
         <value>localhost:8050</value>
     </property>
 </configuration>
+```
 
-# запускаем это дерьмо
+Launching Hadoop
+```sh
 cd $HADOOP_HOME/sbin/
 hdfs namenode -format
-./start-all.sh   (если предупреждение пишем yes)
+./start-all.sh 
 ```
+If there is a warning\question you need to answer yes
 
 ### Testing the configuration
 
