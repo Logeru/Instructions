@@ -192,7 +192,7 @@ You should see a list of modules
 20187 ResourceManager
 ```
 
-# проверяем что все работает
+# We check the performance
 ```sh
 hadoop version
 ```
