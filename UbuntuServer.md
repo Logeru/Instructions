@@ -71,7 +71,16 @@ python3.9 -m venv env
 
 ## Install and configure PostgreSQL
 
-Install PostgreSQL 11 and configure locales.
+### Repository PostgreSQL
+You can install from the repositories according to the official documentation [PostgreSQL](https://www.postgresql.org/download/linux/ubuntu/)
+```sh
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+sudo apt-get update
+sudo apt-get -y install postgresql
+```
+
+### Manual install PostgreSQL 11 and configure locales
 Locales are usually already set up in Ubuntu but in case of problems you can use this instruction
 ```sh
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add - ; \
@@ -96,6 +105,7 @@ sudo vim /etc/profile
     export LC_ALL=ru_RU.UTF-8
 ```
 
+### Configure PostgreSQL
 Change postges password, create clear database named dbms_db:
 ```sh
 sudo passwd postgres
