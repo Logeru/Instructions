@@ -1,5 +1,4 @@
 # Ubuntu Server Set Up for Django Instruction
-# The instruction for Debian from Alexey Goloburdin is taken as a basis. With great gratitude and respect
 
 In this guide we will set up clean Ubuntu server for Python and Django projects. We will configure secure SSH connection, install from Ubuntu repositories and from sources all needed packages and ware it together for working Ubuntu Django server.
 
@@ -185,3 +184,4 @@ limit_request_fields = 32000
 limit_request_field_size = 0
 raw_env = 'DJANGO_SETTINGS_MODULE=project.settings'
 ```
+# The instruction for Debian from Alexey Goloburdin is taken as a basis. With great gratitude and respect.
