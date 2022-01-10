@@ -1,4 +1,5 @@
 # Ubuntu Server Set Up for Django Instruction
+# The instruction for Debian from Alexey Goloburdin is taken as a basis. With great gratitude and respect
 
 In this guide we will set up clean Ubuntu server for Python and Django projects. We will configure secure SSH connection, install from Ubuntu repositories and from sources all needed packages and ware it together for working Ubuntu Django server.
 
@@ -7,6 +8,8 @@ You can also use this manual for Debian, if you have any problems, you can refer
 The names of the created directories and users are given for example, you can use your own data
 
 ### Start and configure ssh
+
+Setup packages:
 ```sh
 sudo apt-get update
 sudo apt-get install -y vim mosh tmux htop git curl wget unzip zip gcc build-essential make
